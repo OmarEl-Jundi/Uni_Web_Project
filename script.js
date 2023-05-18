@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let cartIcon = document.querySelector("#cart-icon");
   let cart = document.querySelector(".cart");
   let closeCart = document.querySelector("#close-cart");
+  let dark = document.querySelector("#dark");
+  let light = document.querySelector("#light");
 
   cartIcon.onclick = () => {
     cart.classList.add("active");
@@ -9,6 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeCart.onclick = () => {
     cart.classList.remove("active");
+  };
+
+  dark.onclick = () => {
+    light.classList.remove("remove");
+    dark.classList.remove("active");
+    document.querySelector("body").classList.remove("dark");
+    document.querySelector("#search-icon").classList.remove("dark");
+  };
+
+  light.onclick = () => {
+    dark.classList.add("active");
+    light.classList.add("remove");
+    document.querySelector("body").classList.add("dark");
+    document.querySelector("#search-icon").classList.add("dark");
   };
 });
 

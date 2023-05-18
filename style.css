@@ -15,11 +15,22 @@
   --text-color: #171427;
   --bg-color: #fff;
 }
+#logo-img {
+  width: 30px;
+  margin-right: 10px;
+}
 img {
   width: 100%;
 }
 body {
   color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body.dark {
+  --main-color: #4e0303;
+  --text-color: #fd4646;
+  --bg-color: #161616;
 }
 .container {
   max-width: 1068px;
@@ -34,22 +45,61 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--bg-color);
-  box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+  background: var(--main-color);
+  box-shadow: 0 1px 4px hsl(0 4% 15% / 30%);
   z-index: 100;
 }
 .nav {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
   padding: 20px 0;
 }
+
 .logo {
+  display: flex;
   font-size: 1.1rem;
   color: var(--text-color);
   font-weight: 400;
+  align-items: center;
 }
+
+#search-icon {
+  position: relative;
+  left: 45px;
+}
+#search-icon.dark {
+  position: relative;
+  left: 0px;
+}
+
+#dark {
+  position: relative;
+  top: -100px;
+}
+
+#dark.active {
+  position: fixed;
+  top: 20px;
+}
+#light {
+  position: relative;
+  top: 0;
+}
+#light.remove {
+  position: relative;
+  top: -100px;
+}
+.nav-icons {
+  border-radius: 25%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
 #cart-icon {
+  border-radius: 25%;
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -57,7 +107,7 @@ header {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 360px;
+  width: 410px;
   min-height: 100vh;
   padding: 20px;
   background: var(--bg-color);
@@ -159,6 +209,7 @@ header {
   gap: 1.8rem;
 }
 .product-box {
+  border-radius: 2%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -168,22 +219,27 @@ header {
 .product-box:hover {
   padding: 10px;
   border: 1px solid var(--text-color);
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .product-img {
   width: 100%;
   height: auto;
   margin-bottom: 0.5rem;
+  aspect-ratio: 4/6;
+  object-fit: contain;
 }
+
 .product-title {
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
+
 .price {
   font-weight: 500;
 }
+
 .add-cart {
   position: absolute;
   bottom: 0;
