@@ -1,9 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
+  var searchInput = document.querySelector("#search");
+  let games; // Declare 'games' variable without assignment
+
+  searchInput.addEventListener("input", (e) => {
+    const value = e.target.value.toLowerCase();
+    games.forEach((game) => {
+      const isVisible =
+        game.title.textContent.toLowerCase().includes(value) ||
+        game.price.textContent.toLowerCase().includes(value);
+      game.box.classList.toggle("hide", !isVisible);
+    });
+  });
+
+  games = Array.from(document.querySelectorAll(".product-box")).map((box) => {
+    const title = box.querySelector(".product-title");
+    const price = box.querySelector(".price");
+    return { title, price, box };
+  });
+});
+let isSearching = false;
+document.addEventListener("DOMContentLoaded", () => {
   let cartIcon = document.querySelector("#cart-icon");
   let cart = document.querySelector(".cart");
   let closeCart = document.querySelector("#close-cart");
   let dark = document.querySelector("#dark");
   let light = document.querySelector("#light");
+  let toggleSearch = document.querySelector("#search-icon");
 
   cartIcon.onclick = () => {
     cart.classList.add("active");
@@ -17,15 +39,25 @@ document.addEventListener("DOMContentLoaded", () => {
     light.classList.remove("remove");
     dark.classList.remove("active");
     document.querySelector("body").classList.remove("dark");
-    document.querySelector("#search-icon").classList.remove("dark");
   };
 
   light.onclick = () => {
     dark.classList.add("active");
     light.classList.add("remove");
     document.querySelector("body").classList.add("dark");
-    document.querySelector("#search-icon").classList.add("dark");
   };
+
+  toggleSearch.onclick = () => {
+    if (!isSearching) {
+      document.querySelector("#search").classList.add("active");
+      document.getElementById("search").focus();
+      isSearching = true;
+    } else {
+      document.querySelector("#search").classList.remove("active");
+      isSearching = false;
+    }
+  };
+  console.log(isSearching);
 });
 
 if (document.readyState == "loading") {
