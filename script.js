@@ -2,6 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   var searchInput = document.querySelector("#search");
   let games; // Declare 'games' variable without assignment
 
+  const scrollToBottomLink = document.getElementById("contact");
+  scrollToBottomLink.addEventListener("click", () => {
+    const footer = document.querySelector("footer");
+    footer.scrollIntoView({ behavior: "smooth" });
+  });
+
   searchInput.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase();
     games.forEach((game) => {

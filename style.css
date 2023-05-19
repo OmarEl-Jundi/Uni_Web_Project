@@ -73,6 +73,7 @@ header {
 
 .icons {
   display: flex;
+  margin-right: 100px;
 }
 
 .nav-icons {
@@ -264,8 +265,8 @@ header {
 
 .add-cart {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 2px;
+  right: 2px;
   background: var(--text-color);
   color: var(--bg-color);
   padding: 10px;
@@ -316,7 +317,33 @@ p {
   margin-top: 2px;
   font-weight: 600;
 }
+
+a {
+  color: var(--text-color);
+  margin-right: 5px;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
 .exclusive {
   font-size: x-small;
   color: red;
+}
+footer {
+  white-space: nowrap;
+  text-align: center;
+  background: var(--main-color);
+  box-shadow: 1px 0px 4px var(--shdw-color);
+  z-index: 100;
+  padding: 0 1200px 0 700px;
+}
+
+footer p {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+
+span {
+  color: var(--add-crate-color);
 }
