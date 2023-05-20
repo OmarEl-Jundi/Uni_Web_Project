@@ -39,7 +39,7 @@ body.dark {
   --price-color: #fff;
 }
 .container {
-  max-width: 1068px;
+  max-width: 970px;
   margin: auto;
   width: 100%;
 }
@@ -306,6 +306,9 @@ header {
   .cart {
     width: 320px;
   }
+  footer {
+    width: 30%;
+  }
 }
 
 @media (max-width: 360px) {
@@ -315,7 +318,12 @@ header {
   .cart {
     width: 280px;
   }
+
+  footer {
+    width: 20%;
+  }
 }
+
 p {
   margin-right: 5px;
   margin-top: 2px;
@@ -336,21 +344,29 @@ a {
 footer {
   white-space: nowrap;
   text-align: center;
+  align-items: center;
   background: var(--main-color);
   box-shadow: 1px 0px 4px var(--shdw-color);
   z-index: 100;
-  padding: 0 1200px 0 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-footer p {
-  margin: 5px 0;
+footer div {
   padding: 5px 0;
 }
 
 span {
   color: var(--add-crate-color);
+  font-weight: 600;
 }
 
 a:hover {
   color: var(--add-crate-color);
+}
+
+.footer-icons:hover {
+  color: var(--text-color);
+  cursor: default;
 }
