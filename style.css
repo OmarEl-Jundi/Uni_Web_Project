@@ -15,7 +15,7 @@
   --text-color: #171427;
   --bg-color: #fff;
   --shdw-color: hsl(0 4% 15% / 30%);
-  --add-crate-color: navy;
+  --add-crate-color: mediumblue;
   --price-color: firebrick;
 }
 #logo-img {
@@ -81,6 +81,10 @@ header {
   font-size: 1.8rem;
   cursor: pointer;
   margin-right: 10px;
+}
+
+.nav-icons:hover {
+  color: var(--add-crate-color);
 }
 
 #search {
@@ -344,5 +348,9 @@ footer p {
 }
 
 span {
+  color: var(--add-crate-color);
+}
+
+a:hover {
   color: var(--add-crate-color);
 }
