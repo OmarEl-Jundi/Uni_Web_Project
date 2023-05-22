@@ -229,6 +229,8 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1.5rem));
   gap: 1.8rem;
+  text-align: center;
+  justify-content: center;
 }
 .product-box {
   border-radius: 10% / 5%;
