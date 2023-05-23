@@ -26,6 +26,19 @@ document.addEventListener("DOMContentLoaded", () => {
   let dark = document.querySelector("#dark");
   let light = document.querySelector("#light");
   let toggleSearch = document.querySelector("#search-icon");
+  let closeDesc = document.querySelector("#close-desc");
+  let rdr2 = document.querySelector(".rdr2-img");
+  let rdr1 = document.querySelector(".rdr1-img");
+  let gtav = document.querySelector(".gtav-img");
+  let gtaiv = document.querySelector(".gtaiv-img");
+  let wd2 = document.querySelector(".wd2-img");
+  let wd1 = document.querySelector(".wd1-img");
+  let acu = document.querySelector(".acu-img");
+  let acbf = document.querySelector(".acbf-img");
+  let hitman = document.querySelector(".hitman-img");
+  let mkx = document.querySelector(".mkx-img");
+  let r6s = document.querySelector(".r6s-img");
+  let fifa = document.querySelector(".fifa-img");
 
   cartIcon.onclick = () => {
     cart.classList.add("active");
@@ -56,6 +69,58 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector("#search").classList.remove("active");
       isSearching = false;
     }
+  };
+
+  rdr2.onclick = () => {
+    document.querySelector(".rdr2-desc").classList.add("active");
+  };
+
+  rdr1.onclick = () => {
+    document.querySelector(".rdr1-desc").classList.add("active");
+  };
+
+  gtav.onclick = () => {
+    document.querySelector(".gtav-desc").classList.add("active");
+  };
+
+  gtaiv.onclick = () => {
+    document.querySelector(".gtaiv-desc").classList.add("active");
+  };
+
+  wd2.onclick = () => {
+    document.querySelector(".wd2-desc").classList.add("active");
+  };
+
+  wd1.onclick = () => {
+    document.querySelector(".wd1-desc").classList.add("active");
+  };
+
+  acu.onclick = () => {
+    document.querySelector(".acu-desc").classList.add("active");
+  };
+
+  acbf.onclick = () => {
+    document.querySelector(".acbf-desc").classList.add("active");
+  };
+
+  hitman.onclick = () => {
+    document.querySelector(".hitman-desc").classList.add("active");
+  };
+
+  mkx.onclick = () => {
+    document.querySelector(".mkx-desc").classList.add("active");
+  };
+
+  r6s.onclick = () => {
+    document.querySelector(".r6s-desc").classList.add("active");
+  };
+
+  fifa.onclick = () => {
+    document.querySelector(".fifa-desc").classList.add("active");
+  };
+
+  closeDesc.onclick = () => {
+    document.querySelector(".product-description").classList.remove("active");
   };
 });
 

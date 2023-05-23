@@ -263,6 +263,35 @@ header {
   margin-bottom: 0.5rem;
 }
 
+.product-description {
+  position: fixed;
+  bottom: -200%;
+  height: 600px;
+  width: 970px;
+  padding: 20px;
+  background: var(--bg-color);
+  box-shadow: -2px 0 4px var(--shdw-color);
+  transition: 0.3s;
+}
+
+.product-description.active {
+  bottom: 0;
+}
+
+.desc-title {
+  color: var(--price-color);
+  font-size: xx-large;
+}
+
+#close-desc {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
 .price {
   font-weight: 500;
   color: var(--price-color);
@@ -283,6 +312,58 @@ header {
 }
 .add-cart:hover {
   background: var(--add-crate-color);
+}
+
+p {
+  margin-right: 5px;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+a {
+  color: var(--text-color);
+  margin-right: 5px;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.exclusive {
+  font-size: x-small;
+  color: red;
+}
+footer {
+  background: var(--main-color);
+  box-shadow: 1px 0px 4px var(--shdw-color);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 1px;
+  padding-bottom: 10px;
+}
+
+footer div {
+  padding: 5px 0;
+}
+
+span {
+  color: var(--add-crate-color);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--add-crate-color);
+}
+
+.footer-icons:hover {
+  color: var(--text-color);
+  cursor: default;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1080px) {
@@ -320,50 +401,4 @@ header {
   .cart {
     width: 280px;
   }
-}
-
-p {
-  margin-right: 5px;
-  margin-top: 2px;
-  font-weight: 600;
-}
-
-a {
-  color: var(--text-color);
-  margin-right: 5px;
-  margin-top: 2px;
-  font-weight: 600;
-}
-
-.exclusive {
-  font-size: x-small;
-  color: red;
-}
-footer {
-  background: var(--main-color);
-  box-shadow: 1px 0px 4px var(--shdw-color);
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  bottom: 1px;
-}
-
-footer div {
-  padding: 5px 0;
-}
-
-span {
-  color: var(--add-crate-color);
-  font-weight: 600;
-}
-
-a:hover {
-  color: var(--add-crate-color);
-}
-
-.footer-icons:hover {
-  color: var(--text-color);
-  cursor: default;
 }
