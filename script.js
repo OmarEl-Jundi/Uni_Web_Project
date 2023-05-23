@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
       isSearching = false;
     }
   };
-  console.log(isSearching);
 });
 
 if (document.readyState == "loading") {
