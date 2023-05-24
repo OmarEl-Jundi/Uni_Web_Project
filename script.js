@@ -19,6 +19,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 let isSearching = false;
+
+document.onkeydown = function (evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {
+    document.querySelector(".rdr2-desc").classList.remove("active");
+    document.querySelector(".rdr1-desc").classList.remove("active");
+    document.querySelector(".gtav-desc").classList.remove("active");
+    document.querySelector(".gtaiv-desc").classList.remove("active");
+    document.querySelector(".wd2-desc").classList.remove("active");
+    document.querySelector(".wd1-desc").classList.remove("active");
+    document.querySelector(".acu-desc").classList.remove("active");
+    document.querySelector(".acbf-desc").classList.remove("active");
+    document.querySelector(".hitman-desc").classList.remove("active");
+    document.querySelector(".mkx-desc").classList.remove("active");
+    document.querySelector(".r6s-desc").classList.remove("active");
+    document.querySelector(".fifa-desc").classList.remove("active");
+  }
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   let cartIcon = document.querySelector("#cart-icon");
   let cart = document.querySelector(".cart");
