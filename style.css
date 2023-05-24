@@ -422,7 +422,7 @@ footer > div {
   }
   .product-description {
     width: 400px;
-    height: 620px;
+    height: 590px;
   }
   iframe {
     width: 350px;
@@ -438,7 +438,7 @@ footer > div {
   }
   .product-description {
     width: 350px;
-    height: 580px;
+    height: 550px;
   }
   iframe {
     width: 320px;
@@ -449,7 +449,7 @@ footer > div {
 @media (max-width: 380px) {
   .product-description {
     width: 320px;
-    height: 480px;
+    height: 450px;
   }
   iframe {
     width: 300px;
@@ -460,7 +460,7 @@ footer > div {
 @media (max-width: 370px) {
   .product-description {
     width: 280px;
-    height: 350px;
+    height: 310px;
   }
   iframe {
     width: 200px;
