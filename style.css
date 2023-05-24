@@ -289,6 +289,7 @@ header {
 
 .product-description.active {
   bottom: 0;
+  overflow: scroll;
 }
 
 .desc-title {
@@ -395,6 +396,13 @@ footer > div {
   }
 }
 
+@media (max-width: 900px) {
+  .product-description {
+    width: 750px;
+    height: 790px;
+  }
+}
+
 @media (max-width: 600px) {
   .product-description {
     width: 540px;
@@ -421,7 +429,7 @@ footer > div {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .store {
     margin-top: 1rem !important;
   }
@@ -429,9 +437,17 @@ footer > div {
     width: 280px;
   }
   .product-description {
-    width: 280px;
+    width: 350px;
+    height: 750px;
   }
   iframe {
-    width: 250px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 380px) {
+  .product-description {
+    width: 310px;
+    height: 580px;
   }
 }
