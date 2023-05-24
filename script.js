@@ -26,7 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
   let dark = document.querySelector("#dark");
   let light = document.querySelector("#light");
   let toggleSearch = document.querySelector("#search-icon");
-  let closeDesc = document.querySelector("#close-desc");
+  let closeRdr2 = document.querySelector("#close-rdr2");
+  let closeRdr1 = document.querySelector("#close-rdr1");
+  let closeGtav = document.querySelector("#close-gtav");
+  let closeGtaiv = document.querySelector("#close-gtaiv");
+  let closeWd2 = document.querySelector("#close-wd2");
+  let closeWd1 = document.querySelector("#close-wd1");
+  let closeAcu = document.querySelector("#close-acu");
+  let closeAcbf = document.querySelector("#close-acbf");
+  let closeHitman = document.querySelector("#close-hitman");
+  let closeMkx = document.querySelector("#close-mkx");
+  let closeR6s = document.querySelector("#close-r6s");
+  let closeFifa = document.querySelector("#close-fifa");
   let rdr2 = document.querySelector(".rdr2-img");
   let rdr1 = document.querySelector(".rdr1-img");
   let gtav = document.querySelector(".gtav-img");
@@ -75,52 +86,96 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".rdr2-desc").classList.add("active");
   };
 
+  closeRdr2.onclick = () => {
+    document.querySelector(".rdr2-desc").classList.remove("active");
+  };
+
   rdr1.onclick = () => {
     document.querySelector(".rdr1-desc").classList.add("active");
+  };
+
+  closeRdr1.onclick = () => {
+    document.querySelector(".rdr1-desc").classList.remove("active");
   };
 
   gtav.onclick = () => {
     document.querySelector(".gtav-desc").classList.add("active");
   };
 
+  closeGtav.onclick = () => {
+    document.querySelector(".gtav-desc").classList.remove("active");
+  };
+
   gtaiv.onclick = () => {
     document.querySelector(".gtaiv-desc").classList.add("active");
+  };
+
+  closeGtaiv.onclick = () => {
+    document.querySelector(".gtaiv-desc").classList.remove("active");
   };
 
   wd2.onclick = () => {
     document.querySelector(".wd2-desc").classList.add("active");
   };
 
+  closeWd2.onclick = () => {
+    document.querySelector(".wd2-desc").classList.remove("active");
+  };
+
   wd1.onclick = () => {
     document.querySelector(".wd1-desc").classList.add("active");
+  };
+
+  closeWd1.onclick = () => {
+    document.querySelector(".wd1-desc").classList.remove("active");
   };
 
   acu.onclick = () => {
     document.querySelector(".acu-desc").classList.add("active");
   };
 
+  closeAcu.onclick = () => {
+    document.querySelector(".acu-desc").classList.remove("active");
+  };
+
   acbf.onclick = () => {
     document.querySelector(".acbf-desc").classList.add("active");
+  };
+
+  closeAcbf.onclick = () => {
+    document.querySelector(".acbf-desc").classList.remove("active");
   };
 
   hitman.onclick = () => {
     document.querySelector(".hitman-desc").classList.add("active");
   };
 
+  closeHitman.onclick = () => {
+    document.querySelector(".hitman-desc").classList.remove("active");
+  };
+
   mkx.onclick = () => {
     document.querySelector(".mkx-desc").classList.add("active");
+  };
+
+  closeMkx.onclick = () => {
+    document.querySelector(".mkx-desc").classList.remove("active");
   };
 
   r6s.onclick = () => {
     document.querySelector(".r6s-desc").classList.add("active");
   };
 
+  closeR6s.onclick = () => {
+    document.querySelector(".r6s-desc").classList.remove("active");
+  };
+
   fifa.onclick = () => {
     document.querySelector(".fifa-desc").classList.add("active");
   };
 
-  closeDesc.onclick = () => {
-    document.querySelector(".product-description").classList.remove("active");
+  closeFifa.onclick = () => {
+    document.querySelector(".fifa-desc").classList.remove("active");
   };
 });
 
