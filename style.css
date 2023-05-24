@@ -406,7 +406,7 @@ footer > div {
 @media (max-width: 600px) {
   .product-description {
     width: 540px;
-    height: 790px;
+    height: 710px;
   }
 }
 
@@ -422,7 +422,7 @@ footer > div {
   }
   .product-description {
     width: 400px;
-    height: 790px;
+    height: 620px;
   }
   iframe {
     width: 350px;
@@ -438,16 +438,32 @@ footer > div {
   }
   .product-description {
     width: 350px;
-    height: 750px;
+    height: 580px;
   }
   iframe {
     width: 320px;
+    height: 2300px;
   }
 }
 
 @media (max-width: 380px) {
   .product-description {
-    width: 310px;
-    height: 580px;
+    width: 320px;
+    height: 480px;
+  }
+  iframe {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 370px) {
+  .product-description {
+    width: 280px;
+    height: 350px;
+  }
+  iframe {
+    width: 200px;
+    height: 200px;
   }
 }
