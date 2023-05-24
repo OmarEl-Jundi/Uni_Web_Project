@@ -290,6 +290,7 @@ header {
 .product-description.active {
   bottom: 0;
   overflow: scroll;
+  transition: 0.3s;
 }
 
 .desc-title {
