@@ -280,7 +280,7 @@ header {
   border-radius: 25px 25px 0px 0px;
   position: fixed;
   bottom: -200%;
-  width: 67.5%;
+  width: 970px;
   height: 80%;
   padding: 20px;
   background: var(--bg-color);
@@ -290,7 +290,6 @@ header {
 
 .product-description.active {
   bottom: 0;
-  overflow: scroll;
   transition: 0.3s;
 }
 
@@ -401,6 +400,7 @@ footer > div {
 @media (max-width: 900px) {
   .product-description {
     width: 90%;
+    overflow: scroll;
   }
 }
 
