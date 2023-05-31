@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (var i = 0; i < gameDesc.length; i++) {
       if (
         !gameDesc[i].contains(event.target) &&
-        !gameImg[i].contains(event.target)
+        !gameBox[i].contains(event.target)
       ) {
         gameDesc[i].classList.remove("active");
       }
