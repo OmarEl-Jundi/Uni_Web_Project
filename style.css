@@ -229,7 +229,7 @@ header {
 }
 .store-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1.5rem));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.8rem;
   text-align: center;
   justify-content: center;
@@ -401,6 +401,9 @@ footer > div {
   .product-description {
     width: 90%;
     overflow: scroll;
+  }
+  .store-content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
