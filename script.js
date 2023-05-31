@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let light = document.querySelector("#light");
   let toggleSearch = document.querySelector("#search-icon");
   let gameDesc = document.querySelectorAll(".product-description");
-  let gameImg = document.querySelectorAll(".product-img");
+  let gameBox = document.querySelectorAll(".product-box");
 
   cartIcon.onclick = () => {
     cart.classList.add("active");
@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  gameImg.forEach((img, index) => {
-    img.onclick = () => {
+  gameBox.forEach((game, index) => {
+    game.onclick = () => {
       gameDesc[index].classList.add("active");
     };
   });
