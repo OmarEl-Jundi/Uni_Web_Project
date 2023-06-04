@@ -39,7 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   document.body.addEventListener("click", (event) => {
-    if (!cart.contains(event.target) && !cartIcon.contains(event.target)) {
+    if (
+      !cart.contains(event.target) &&
+      !cartIcon.contains(event.target) &&
+      !event.target.classList.contains("cart-remove") // Exclude the remove button from closing the cart
+    ) {
       cart.classList.remove("active");
     }
   });
