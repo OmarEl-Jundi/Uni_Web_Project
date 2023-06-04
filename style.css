@@ -15,7 +15,7 @@
   --text-color: #171427;
   --bg-color: #fff;
   --shdw-color: hsl(0 4% 15% / 30%);
-  --add-crate-color: mediumblue;
+  --add-crate-color: orange;
   --price-color: firebrick;
   --border-color: black;
 }
@@ -369,6 +369,7 @@ span {
 
 a:hover {
   color: var(--add-crate-color);
+  text-decoration: underline;
 }
 
 .footer-icons:hover {
