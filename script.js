@@ -68,8 +68,19 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   gameBox.forEach((game, index) => {
-    game.onclick = () => {
-      gameDesc[index].classList.add("active");
+    let addButton = game.querySelector(".add-cart");
+
+    game.onclick = (event) => {
+      // Check if the add-cart button was clicked
+      if (!event.target.classList.contains("add-cart")) {
+        gameDesc[index].classList.add("active");
+      }
+    };
+    addButton.onclick = (event) => {
+      // Prevent event propagation to the product box
+      event.stopPropagation();
+      // Add your add-cart logic here
+      // ...
     };
   });
 
