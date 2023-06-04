@@ -369,7 +369,6 @@ span {
 
 a:hover {
   color: var(--add-crate-color);
-  text-decoration: underline;
 }
 
 .footer-icons:hover {
