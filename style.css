@@ -402,9 +402,6 @@ footer > div {
     width: 90%;
     overflow: scroll;
   }
-  /* .store-content {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  } */
 }
 
 @media (max-width: 420px) {
