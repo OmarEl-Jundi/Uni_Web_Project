@@ -187,7 +187,11 @@ function addCartClicked(event) {
     for (var i = 0; i < cartItemsNames.length; i++) {
       var cartProductName = cartItemsNames[i].innerText;
       if (cartProductName === title) {
-        alert("You have already added this item to the cart.");
+        var quantityInputs = document.getElementsByClassName("cart-quantity");
+        var quantityInput = quantityInputs[i];
+        var newQuantity = parseInt(quantityInput.value) + 1;
+        quantityInput.value = newQuantity;
+        updateTotal();
         return;
       }
     }
