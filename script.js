@@ -192,6 +192,7 @@ function addCartClicked(event) {
         var newQuantity = parseInt(quantityInput.value) + 1;
         quantityInput.value = newQuantity;
         updateTotal();
+        animateCartIcon(); // Trigger the animation function
         return;
       }
     }
@@ -212,12 +213,27 @@ function addCartClicked(event) {
     cartShopBox.innerHTML = cartBoxContent;
     cartItems.append(cartShopBox);
 
+    animateCartIcon(); // Trigger the animation function
+
     cartShopBox
       .getElementsByClassName("cart-remove")[0]
       .addEventListener("click", removeCartItem);
     cartShopBox
       .getElementsByClassName("cart-quantity")[0]
       .addEventListener("change", quantityChanged);
+
+    updateTotal();
+  }
+
+  function animateCartIcon() {
+    var cartIcon = document.querySelector("#cart-icon");
+    // Add animation class to cart icon
+    cartIcon.classList.add("animate");
+
+    // Remove the animation class after a certain time (e.g., 1 second)
+    setTimeout(function () {
+      cartIcon.classList.remove("animate");
+    }, 1000);
   }
 }
 //Update Total
