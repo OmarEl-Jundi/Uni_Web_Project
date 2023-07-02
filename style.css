@@ -286,7 +286,7 @@ header {
   border-radius: 25px 25px 0px 0px;
   position: fixed;
   bottom: -200%;
-  width: 970px;
+  width: 60%;
   height: 80%;
   padding: 20px;
   background: var(--bg-color);
@@ -404,7 +404,7 @@ footer > div {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1300px) {
   .nav {
     padding: 15px;
   }
@@ -418,9 +418,6 @@ footer > div {
   .store {
     margin-top: 2rem !important;
   }
-}
-
-@media (max-width: 900px) {
   .product-description {
     width: 90%;
     overflow: scroll;
